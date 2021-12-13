@@ -6,15 +6,17 @@ import numpy as np
 from visual_graph import *
 from utilities import *
 
-
-def main():
+''' Breadth First Search '''
+def bfs(initial_state):
 
 
     #creating visual pdf graph
     graph = create_Digraph('solution_graphs/bfs_graph',{'shape': 'plaintext'})
 
     # node =Node( Taquin([[1,2, " "], [4, 5,3], [7,8,6]]))
-    node = Node(Taquin([[1," ", 3], [4, 2,6], [7,5,8]]))
+    # node = Node(Taquin([[1," ", 3], [4, 2,6], [7,5,8]]))
+
+    node=Node(Taquin(initial_state))
 
     opened_nodes = []
     closed_nodes = []
@@ -60,7 +62,3 @@ def main():
 
 
 
-
-
-if __name__ == "__main__":
-    main()

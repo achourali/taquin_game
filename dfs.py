@@ -6,14 +6,16 @@ import numpy as np
 from visual_graph import *
 from utilities import *
 
-
-def main():
+''' Depth First Search '''
+def dfs(initial_state):
 
 
     graph = create_Digraph('solution_graphs/dfs_graph',{'shape': 'plaintext'})
     
-    node =Node( Taquin([[1,2, " "], [4, 5,3], [7,8,6]]))
+    # node =Node( Taquin([[1,2, " "], [4, 5,3], [7,8,6]]))
     # node = Node(Taquin([[1," ", 3], [4, 2,6], [7,5,8]]))
+
+    node=Node(Taquin(initial_state))
 
     opened_nodes = []
     closed_nodes = []
@@ -61,6 +63,3 @@ def main():
 
 
 
-
-if __name__ == "__main__":
-    main()

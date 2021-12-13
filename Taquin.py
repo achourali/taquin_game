@@ -4,8 +4,8 @@ class Taquin:
 
 
 
-    def __init__(self, initialState):
-        self.state = np.array(initialState)
+    def __init__(self, initial_state):
+        self.state = np.array(initial_state)
         self.nb_rows , self.nb_columns =self.state.shape 
 
 

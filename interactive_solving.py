@@ -2,9 +2,9 @@ from Taquin import Taquin
 import sys
 from _Getch import _Getch
 
-def main():
+def interactive_solving(initial_state):
     getch = _Getch()
-    t=Taquin([[1,2,3], [4,5,6] ,[7," ",8]])
+    t=Taquin(initial_state)
 
     while(True):
         
@@ -25,6 +25,3 @@ def main():
 
         if(ord(k)==3):
             exit()
-
-if __name__ == "__main__":
-    main()
