@@ -1,5 +1,8 @@
 import graphviz
 
+# functions used in creating visual pdf graph
+
+
 def create_Digraph(path,node_attr):
     return graphviz.Digraph(path, filename=path+'.gv', node_attr=node_attr)
 

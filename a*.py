@@ -3,9 +3,11 @@ from Taquin import Taquin
 import numpy as np
 from copy import deepcopy
 from visual_graph import *
+from utilities import *
 
 def main():
 
+    #creating visual pdf graph
     graph = create_Digraph('solution_graphs/a_star_graph',{'shape': 'plaintext'})
 
     taquin = Taquin([[1," ", 3], [4, 2,6], [7,5,8]])
@@ -57,23 +59,6 @@ def main():
 
     print("number of visited nodes = ", len(closed_nodes))
 
-
-def print_solution_path(node):
-    inverted_list=[]
-    while node!=None:
-        inverted_list.insert(0, node)
-        node=node.parent
-
-    for node in inverted_list:
-        node.taquin.display_state()
-
-
-
-def find_node_index(node, nodes):
-    for iteration, n in enumerate(nodes):
-        if n.taquin.get_state() == node.taquin.get_state():
-            return iteration
-    return None
 
 
 def find_lower_cost_node_index(nodes):
