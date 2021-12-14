@@ -10,11 +10,6 @@ def a_star(initial_state):
     #creating visual pdf graph
     graph = create_Digraph('solution_graphs/a_star_graph',{'shape': 'plaintext'})
 
-    # taquin = Taquin([[1," ", 3], [4, 2,6], [7,5,8]])
-    # taquin=Taquin([[1,3,5],[4,2,6],[7,8," "]])
-    # taquin = Taquin([[1,2,7,3], [5,6,11,4], [ 9," ",10,8]])
-    # taquin = Taquin([[" ",2,7,3], [1,11,4,8], [ 5,9,6,10]])
-    
     
     node = A_star_node(Taquin(initial_state))
 

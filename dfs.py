@@ -12,8 +12,6 @@ def dfs(initial_state):
 
     graph = create_Digraph('solution_graphs/dfs_graph',{'shape': 'plaintext'})
     
-    # node =Node( Taquin([[1,2, " "], [4, 5,3], [7,8,6]]))
-    # node = Node(Taquin([[1," ", 3], [4, 2,6], [7,5,8]]))
 
     node=Node(Taquin(initial_state))
 
